@@ -144,7 +144,7 @@ select date_format(now(), '%Y-%m-%d %H-%i-%s');
 -- on update restrict
 -- 위의 2개가 디폴트이다.
 
--- 흉부외과 또는 일반외과 의사 목록 출력하기
+-- 문제 : 흉부외과 또는 일반외과 의사 목록 출력하기
 -- HIRE_YMD datetime으로 되어있음 -> date로 받아야함
 
 SELECT DR_NAME, DR_ID, MCDP_CD, DATE_FORMAT(HIRE_YMD, '%Y-%m-%d') as hire_ymd from DOCTOR Where MCDP_CD IN('CS','GS') ORDER BY HIRE_YMD DESC, DR_NAME;
