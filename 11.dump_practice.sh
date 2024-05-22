@@ -16,3 +16,17 @@ mysqldump -uroot -p board -r dumpfile.sql
 git add . 
 git commit -m "mariadb syntax"
 git push origin main
+
+# docker ps
+# docker exec -it my_mariadb /bin/bash
+# mariadb-dump -u root -p board > dumpfile.sql
+# >비밀번호 입력
+# >docker > my_mariadb > files > dumpfile.sql 다운로드
+# 리눅스에서 mariadb 서버 설치
+# sudo apt-get install mariadb-server;
+# mariadb 서버 시작
+# sudo systemctl start mariadb;
+# mariadb 접속테스트
+# sudo mariadb -u root -p
+
+
